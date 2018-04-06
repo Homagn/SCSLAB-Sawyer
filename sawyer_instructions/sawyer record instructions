@@ -1,0 +1,30 @@
+terminal 1:
+rosrun intera_examples joint_recorder.py -f move1
+
+record the trajectory by moving the arms
+
+terminal 2:
+rosrun intera_interface joint_trajectory_action_server.py --mode velocity
+
+terminal 1:
+
+rosrun intera_examples joint_trajectory_file_playback.py -f move1
+
+
+Ideas:
+rostopic echo /robot/limb/right/commanded_endpoint_state  to a text file 
+rostopic echo /robot/joint_states to a text file
+
+Now try tweaking the move1.txt file to make joint anomaly changes and then record 
+rostopic echo /robot/joint_states to a text file all the while keeping the command text file the same
+
+parallel -j 2 -- 'rostopic echo -p /robot/joint_states > DatasetJ.txt' 'rostopic echo -p /robot/limb/right/commanded_endpoint_state > DatasetC.txt'
+
+
+
+
+
+
+
+Publishing topics and controlling the arm directly using ros chaannels:
+http://sdk.rethinkrobotics.com/intera/Arm_Control_Systems

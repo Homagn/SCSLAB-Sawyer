@@ -1,0 +1,10 @@
+import os
+import time
+from gazebo_client import ComClient
+
+if __name__=="__main__":
+    client = ComClient()
+    client._stack_actions([0,20,0,0,0,0,0],[-1,-1,-1,-1,-1,-1,-1],[0,10,0,0,0,0,0],"robot1")
+    client._stack_actions([0,20,0,0,0,0,0],[-1,-1,-1,-1,-1,-1,-1],[0,10,0,0,0,0,0],"robot2")
+    client._execute()
+    

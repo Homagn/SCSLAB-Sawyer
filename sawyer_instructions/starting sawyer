@@ -1,0 +1,14 @@
+make sure the emergency stop is released, press the power button and start the robot.
+
+start a terminal and :
+cd ros_ws
+source devel/setup.bash
+roscore
+
+start a new terminal and:
+cd ros_ws
+source devel/setup.bash
+./intera.sh
+(now you are connected to the robot, you can check local connectivity by typing ping 10.24.250.23)
+
+Got to indera sdk examples website and then you can start the joint position control example.

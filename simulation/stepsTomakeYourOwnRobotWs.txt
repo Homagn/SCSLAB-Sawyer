@@ -1,0 +1,17 @@
+First download the git repository which contains all the launch and the urdf files related to the robot
+Genrally they will contain two important folders-- robot_gazebo and robot_description, inside which again you will find launch, world and launch,meshes,urdf respectively
+Now create your own directory in home, and name it say my_robot
+cd myrobot
+mkdir src
+cd ..
+source devel/setup.bash
+catkin_make
+This will link ros to your folder and create two additional folders build and devel
+cd src
+catkin_create_pkg mybot_gazebo
+go inside the recently created mybot_gazebo folder and paste launch and worlds folder from the robot_gazebo folder inside the github downloaded folder 
+cd ..
+catkin_create_pkg mybot_description
+go inside the recently created mybot_description folder and paste launch,urdf and meshes folders from the robot_description folder inside the github downloaded folder 
+navigate back to ros_ws/my_robot
+test successful compilation by typing : roslaunch mybot_description mybot_rviz.launch or whatever name the launch file has
