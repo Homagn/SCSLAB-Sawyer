@@ -1,0 +1,8 @@
+Go to:
+http://sdk.rethinkrobotics.com/intera/Software_Update
+
+In the requirements section, go to the first link to download the software zip file:
+username:homagnisaha@gmail.com
+pass:homagni22
+
+follows through the rest of the instructions

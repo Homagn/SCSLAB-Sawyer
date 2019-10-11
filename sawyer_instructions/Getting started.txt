@@ -1,0 +1,16 @@
+1. Install ros and sawyer sdk from this link:
+http://sdk.rethinkrobotics.com/intera/Workstation_Setup
+(note above website is dead. See pdf in this directory)
+
+2. Install sawyer gazebo from this link:
+http://sdk.rethinkrobotics.com/intera/Gazebo_Tutorial
+(note above website is dead. See pdf in this directory)
+
+3. In ubuntu open a new terminal :ctrl+alt+t
+type: cd ros_ws
+type: source /opt/ros/kinetic/setup.bash
+type: ./intera.sh sim 
+type: roslaunch sawyer_gazebo sawyer_world.launch electric_gripper:=true
+Done!, you are now in the intera simulation terminal
+
+WARNING! - Never upgrade the intera SDK toolkit on your local machine, then you have to upgrade it on sawyer too and its a painful process
