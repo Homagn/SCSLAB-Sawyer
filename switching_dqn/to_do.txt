@@ -1,0 +1,12 @@
+1. write an argparser
+
+dqn_adv.py (change name to main.py)
+Following are the parameters to show trained performance on a real robot
+- line 100- self.evaluate=True
+- line 109- self.continuation = True
+- line 290- acts.append(0) instead of acts.append(np.argmax(j)) will change it to purely head camera based and acts.append(1) will change it to purely hand camera based
+- line 364- agent.evaluate=True
+- line 376- for time_t in range(20) - Give 20 chances to the robot
+
+sawyer.py 
+- line 74/75 switch training between real and sim
