@@ -1,3 +1,8 @@
+Installation requirements:
+python -m pip install --user theano
+python -m pip install --user tensorflow=1.14.0
+python -m pip install --user keras==2.0.4
+
 cd ros_ws
 source /opt/ros/kinetic/setup.bash
 ./intera.sh  (or ./intera.sh sim)
