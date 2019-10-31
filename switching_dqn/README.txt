@@ -1,3 +1,8 @@
+cd ros_ws
+source /opt/ros/kinetic/setup.bash
+./intera.sh  (or ./intera.sh sim)
+(to check connection to robot- ping sawyer.local)
+
 Setting up the simulator:
 
 If you have followed the sawyer setup instructions, then starting the simulator is very easy
