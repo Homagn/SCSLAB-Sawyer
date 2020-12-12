@@ -1,3 +1,7 @@
+0. Docker files at-> https://github.com/Homagn/Dockerfiles/tree/main/scslab-robots
+
+OR
+
 1. Install ros and sawyer sdk from this link:
 http://sdk.rethinkrobotics.com/intera/Workstation_Setup
 (note above website is dead. See pdf in this directory)
